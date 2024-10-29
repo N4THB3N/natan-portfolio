@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  /* Colors */
+  --color-fondo: hsl(207, 40%, 8%);
+  --color-titulos: #e5e5e5;
+  --color-subtitulos: #c6c5c6;
+  
+  /* Fonts */
+  --fuente-titulos: 'Poppins', sans-serif;
+  
+  /* Panels */
+  --color-panel: #100020;
+  
+  /* Primary Color */
+  --color-principal: #c267fd;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: var(--color-fondo) !important;
+  }
+
+/* Global Styles */
+.icono_contacto,
+.icono_contacto_tel,
+.icono_contacto_lin {
+  color: #9458e0;
+  transition: color 1s;
+}
+
+.icono_contacto:hover,
+.icono_contacto_tel:hover {
+  color: #59c3ff;
+}
+
+.icono_contacto_lin:hover {
+  color: #86d3ff;
+}
+
+.barra-mobiles {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+}
+
+#nav-tab {
+  background-color: #3a0e56;
+  border-radius: 16px;
+}
+
+.SubTitulos {
+  color: var(--color-subtitulos);
+  font-size: 0.75rem;
+  font-family: var(--fuente-titulos);
+  font-weight: 400;
+}
+
+.Titulo,
+.TituloQuienSoy,
+.SubTitulosQuienSoy,
+.ParrafoQuienSoy {
+  color: var(--color-titulos);
+  font-family: var(--fuente-titulos);
+}
+
+.Titulo {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.TituloQuienSoy {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.SubTitulosQuienSoy {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.ParrafoQuienSoy {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+/* Projects */
+.proyRemeras,
+.proyAutos,
+.proyBlog {
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  filter: brightness(50%);
+  transition: transform 1s;
+}
+
+.proyRemeras {
+  background-image: url("assets/img/proyectos/dhl.png");
+}
+
+.proyAutos {
+  background-image: url("assets/img/proyectos/medicloud.png");
+}
+
+.proyBlog {
+  background-image: url("assets/img/proyectos/blog_personal.jpg");
+}
+
+.proyRemeras:hover,
+.proyAutos:hover,
+.proyBlog:hover {
+  transform: scale(1.05);
+}
+
+/* Buttons */
+.nav-link,
+.nav-link:focus,
+.nav-link:hover {
+  color: white !important;
+  background-color: var(--color-fondo) !important;
+}
+
+.nav-link,
+.nav-link:visited {
+  background-color: transparent !important;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+  background-color: #7D0AB3 !important;
+  border-color: #7D0AB3 !important;
+}
+
+.btn-outline-primary,
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:visited {
+  border-color: #7D0AB3 !important;
+}
+
+/* General Text */
+h2,
+p {
+  color: var(--color-titulos);
+  font-family: var(--fuente-titulos);
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 900;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* Sections */
+#sobreMi,
+#habilidades,
+#proyectos,
+#contacto {
+  padding-top: 5rem;
+}
+
+/* Contact */
+.contact__icon {
+  color: white;
+  font-size: 2rem;
+  margin-right: var(--mb-0-75);
+}
+
+.contact__content {
+  background-color: #7D28B3;
+  border-radius: .5rem;
+  backdrop-filter: blur(8px);
+  padding: .75rem 1rem .25rem;
+}
+
+.contact__name,
+.contact__email,
+.contact__msg {
+  border: none;
+  background-color: var(--input-color);
+  color: var(--color-titulos);
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+  outline: none;
+  padding: .25rem .5rem .5rem 0;
+  width: 100%;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+/* Profile Circles */
+.circuloPerfil,
+.circuloPerfilGrande {
+  background-image: linear-gradient(to bottom, #9e36e1, var(--color-fondo));
+}
+
+.circuloPerfil {
+  width: 105px;
+  height: 100%;
+}
+
+.circuloPerfilGrande {
+  width: 265px;
+  height: auto;
+}
+
+.Nombre,
+.Trabajo {
+  font-family: var(--fuente-titulos);
+}
+
+.Nombre {
+  color: var(--color-titulos);
+  font-weight: 600;
+}
+
+.Trabajo {
+  color: var(--color-subtitulos);
+  font-size: 0.80rem;
+  margin-top: -0.60rem;
+}
+
+.Paneles {
+  background-color: var(--color-panel);
+}
+
+i {
+  color: white;
+}
+
+/* Branding */
+.TituloBrand,
+.TitulosNav {
+  font-family: var(--fuente-titulos);
+  transition: color 0.3s;
+}
+
+.TituloBrand {
+  color: var(--color-titulos);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.TituloBrand:hover {
+  color: #9e36e1;
+}
+
+.TitulosNav {
+  color: var(--color-subtitulos);
+  font-size: 16px;
+  margin: 0px 10px;
+  text-decoration: none;
+}
+
+.TitulosNav:hover {
+  color: #9e36e1;
+}
+
+/* Skills Section */
+.skills__content {
+  row-gap: 3.5rem;
+}
+
+.skills__title {
+  color: var(--color-titulos);
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.skills__box {
+  display: flex;
+  justify-content: center;
+  column-gap: 3rem;
+}
+
+.skills__group {
+  display: grid;
+  row-gap: 1rem;
+  align-content: flex-start;
+}
+
+.skills__data {
+  display: flex;
+  column-gap: .5rem;
+  color: var(--color-titulos);
+}
+
+.skills__data i {
+  color: lightcoral;
+  font-size: 1rem;
+}
+
+.skills__name {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.skills__level {
+  color: var(--color-subtitulos);
+  font-size: 0.80rem;
+}
+
+.skills__area {
+  padding-inline: 4rem;
+}
