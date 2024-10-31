@@ -89,6 +89,7 @@ html {
 /* Projects */
 .proyRemeras,
 .proyAutos,
+.eCommerce,
 .proyBlog {
   background-position: center;
   background-size: cover;
@@ -105,12 +106,17 @@ html {
   background-image: url("assets/img/proyectos/medicloud.png");
 }
 
+.eCommerce{
+  background-image: url("assets/img/proyectos/project3.jpg");
+}
+
 .proyBlog {
   background-image: url("assets/img/proyectos/blog_personal.jpg");
 }
 
 .proyRemeras:hover,
 .proyAutos:hover,
+.eCommerce:hover,
 .proyBlog:hover {
   transform: scale(1.05);
 }
